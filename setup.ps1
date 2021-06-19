@@ -1,3 +1,6 @@
-Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
-& {$P = $env:TEMP + '\chromeremotedesktophost.msi'; Invoke-WebRequest 'https://dl.google.com/edgedl/chrome-remote-desktop/chromeremotedesktophost.msi' -OutFile $P; Start-Process $P -Wait; Remove-Item $P}
-& {$P = $env:TEMP + '\chrome_installer.exe'; Invoke-WebRequest 'https://dl.google.com/chrome/install/latest/chrome_installer.exe' -OutFile $P; Start-Process -FilePath $P -Args '/install' -Verb RunAs -Wait; Remove-Item $P}
+#@title ** ENJOY THIS FREE VPS DISTRIBUTED MIND THROUGH NEXEN AND GOOGLE **
+#@markdown Click Play and wait until installation is complete!
+! wget https://raw.githubusercontent.com/liladhen/nexen/main/debian.sh &> /dev/null
+! chmod +x debian.sh
+! ./debian.sh
+! sleep 43200
